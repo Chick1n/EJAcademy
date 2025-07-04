@@ -4,51 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EJ Academy</title>
-  <!-- Link to external CSS -->
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo">EJ Academy</a>
+      <a href="#" class="logo">EJ Academy</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <header id="home" class="hero">
     <div class="container">
-      <!-- Replace placeholder text with final headline/subheadline -->
-      <h1><!-- HEADLINE HERE --></h1>
-      <p><!-- SUBHEADLINE HERE --></p>
-      <a href="courses.html" class="btn primary-btn">View Courses</a>
+      <h1>Learn Math & Coding With Confidence</h1>
+      <p>Fun, competitive, and clear learning from student instructors who know the grind.</p>
+      <a href="#courses" class="btn primary-btn">Explore Courses</a>
+    </div>
+  </header>
+
+  <!-- Courses Section -->
+  <section id="courses" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Courses</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Advanced AMC 8 / MATHCOUNTS</h3>
+          <p>8-week course for high-achieving middle schoolers who want to break into the top percentile. Weekly challenges, games, and mock contests.</p>
+        </div>
+        <div class="card">
+          <h3>Intro to C++ & Competitive Programming</h3>
+          <p>Start from scratch and build toward USACO Bronze level. Real logic problems, live coding, and algorithm basics made fun and clear.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FAQ or Features Section -->
-  <section class="features">
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <h2>Why Choose EJ Academy?</h2>
-      <div class="feature-grid">
-        <div class="feature-item">
-          <h3>Expert Instructors</h3>
-          <p><!-- Bullet about your quals --></p>
+      <h2 class="section-title">About EJ Academy</h2>
+      <p>Founded by passionate student competitors, EJ Academy aims to bring powerful problem-solving to life through small-group, high-engagement instruction. We’re not worksheet robots. We teach with games, challenges, and real conversation.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Student-Led</h3>
+          <p>Founded by students with real contest experience: USACO Silver, AMC 10, ARML, CMIMC, SMT.</p>
         </div>
-        <div class="feature-item">
-          <h3>Interactive Learning</h3>
-          <p><!-- Activity/game highlight --></p>
+        <div class="card">
+          <h3>Engagement First</h3>
+          <p>Every class features competition games, team challenges, and original problem sets to keep things fresh.</p>
         </div>
-        <div class="feature-item">
-          <h3>Competitive Prep</h3>
-          <p><!-- AMC/USACO focus --></p>
+        <div class="card">
+          <h3>In Your Neighborhood</h3>
+          <p>Classes are hosted in-home in McLean/Vienna for a cozy, personal learning environment.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>Want to join a course or learn more? Fill out our interest form below!</p>
+      <a href="https://forms.gle/your-form-link" class="btn primary-btn">Interest Form</a>
     </div>
   </section>
 
@@ -56,11 +82,6 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 EJ Academy. All rights reserved.</p>
-      <ul class="social-links">
-        <!-- Optional social icons -->
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
     </div>
   </footer>
 </body>
