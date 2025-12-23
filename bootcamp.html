@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJ Academy Bootcamp</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bootcamp-page">
+  <div class="access-overlay" id="accessOverlay" aria-hidden="false">
+    <div class="access-modal" role="dialog" aria-modal="true" aria-labelledby="accessTitle">
+      <h2 id="accessTitle">Bootcamp Access</h2>
+      <p>Enter the password to view course materials and homework answers.</p>
+      <label class="sr-only" for="bootcampPassword">Password</label>
+      <div class="access-input-row">
+        <input id="bootcampPassword" type="text" placeholder="Password" autocomplete="off">
+        <button class="access-submit" type="button" aria-label="Submit password">
+          <span class="checkmark">✓</span>
+        </button>
+      </div>
+      <p class="access-error" id="accessError" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">EJ Academy</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="bootcamp.html" class="active">Bootcamp</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="bootcamp-hero">
+    <div class="container">
+      <h1>EJ Academy Bootcamp</h1>
+      <p>This page hosts course materials, class handouts, and homework answer keys for enrolled students.</p>
+    </div>
+  </header>
+
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Syllabus</h2>
+      <div class="card bootcamp-card">
+        <div class="card-header">
+          <div>
+            <h3>Bootcamp Syllabus</h3>
+            <p>Review the full course roadmap and weekly topics.</p>
+          </div>
+          <div class="pdf-hover">
+            <a class="btn primary-btn" href="/resources/pdfs/ej-bootcamp-syllabus.pdf" target="_blank" rel="noopener">Open PDF</a>
+            <iframe class="pdf-preview" src="/resources/pdfs/ej-bootcamp-syllabus.pdf" title="Bootcamp syllabus PDF"></iframe>
+          </div>
+        </div>
+        <!-- To add or replace PDFs, drop files in /resources/pdfs/ and update the href/src values below. -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Classes</h2>
+      <div class="class-list">
+        <div class="class-card">
+          <button class="class-toggle" type="button" aria-expanded="false">
+            <span>Class 1: Foundations & Problem Solving</span>
+            <span class="chevron">+</span>
+          </button>
+          <div class="class-content">
+            <div class="resource-card">
+              <span class="resource-label">Class Handout</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-1-handout.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-1-handout.pdf" title="Class 1 handout PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Solution Key</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-1-solutions.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-1-solutions.pdf" title="Class 1 solutions PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Additional Practice</span>
+              <p>Extra problems to reinforce the class concepts.</p>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-1-practice.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-1-practice.pdf" title="Class 1 practice PDF"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <button class="class-toggle" type="button" aria-expanded="false">
+            <span>Class 2: Algebraic Strategies</span>
+            <span class="chevron">+</span>
+          </button>
+          <div class="class-content">
+            <div class="resource-card">
+              <span class="resource-label">Class Handout</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-2-handout.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-2-handout.pdf" title="Class 2 handout PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Solution Key</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-2-solutions.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-2-solutions.pdf" title="Class 2 solutions PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Additional Practice</span>
+              <p>Extra problems to reinforce the class concepts.</p>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-2-practice.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-2-practice.pdf" title="Class 2 practice PDF"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <button class="class-toggle" type="button" aria-expanded="false">
+            <span>Class 3: Geometry & Diagrams</span>
+            <span class="chevron">+</span>
+          </button>
+          <div class="class-content">
+            <div class="resource-card">
+              <span class="resource-label">Class Handout</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-3-handout.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-3-handout.pdf" title="Class 3 handout PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Solution Key</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-3-solutions.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-3-solutions.pdf" title="Class 3 solutions PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Additional Practice</span>
+              <p>Extra problems to reinforce the class concepts.</p>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-3-practice.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-3-practice.pdf" title="Class 3 practice PDF"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-card">
+          <button class="class-toggle" type="button" aria-expanded="false">
+            <span>Class 4: Contest Readiness</span>
+            <span class="chevron">+</span>
+          </button>
+          <div class="class-content">
+            <div class="resource-card">
+              <span class="resource-label">Class Handout</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-4-handout.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-4-handout.pdf" title="Class 4 handout PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Solution Key</span>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-4-solutions.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-4-solutions.pdf" title="Class 4 solutions PDF"></iframe>
+              </div>
+            </div>
+            <div class="resource-card">
+              <span class="resource-label">Additional Practice</span>
+              <p>Extra problems to reinforce the class concepts.</p>
+              <div class="pdf-hover">
+                <a class="btn secondary-btn" href="/resources/pdfs/class-4-practice.pdf" target="_blank" rel="noopener">Open PDF</a>
+                <iframe class="pdf-preview" src="/resources/pdfs/class-4-practice.pdf" title="Class 4 practice PDF"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EJ Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="bootcamp.js"></script>
+</body>
+</html>
