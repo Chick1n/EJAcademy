@@ -10,6 +10,7 @@ const handleSuccess = () => {
   overlay.classList.add("is-hidden");
   overlay.setAttribute("aria-hidden", "true");
   passwordInput.value = "";
+  document.body.classList.remove("no-scroll");
 };
 
 const handleError = () => {
@@ -42,6 +43,8 @@ passwordInput.addEventListener("input", () => {
   errorText.textContent = "";
   passwordInput.classList.remove("is-error");
 });
+
+document.body.classList.add("no-scroll");
 
 const classCards = document.querySelectorAll(".class-card");
 classCards.forEach((card) => {
