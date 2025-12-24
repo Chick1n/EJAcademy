@@ -41,11 +41,10 @@
           <p>Access course materials, homework answers, and practice PDFs for every class session.</p>
           <div class="course-actions">
             <div class="status-row">
-              <span class="course-activity is-active">Active</span>
+              <span class="course-status status-active">Active</span>
               <span class="course-status status-active">In Progress</span>
             </div>
-            <a class="btn primary-btn pill-btn" href="bootcamp.html">
-              <span class="status-dot status-dot--active"></span>
+            <a class="btn primary-btn pill-btn course-btn" href="bootcamp.html">
               <span>Bootcamp Portal</span>
             </a>
           </div>
@@ -58,15 +57,13 @@
               <span class="course-status status-coming">Coming Soon</span>
             </div>
             <div class="dropdown">
-              <a class="btn primary-btn dropbtn pill-btn" href="#">
-                <span class="status-dot status-dot--info"></span>
+              <a class="btn primary-btn dropbtn pill-btn course-btn" href="#">
                 <span>Learn More</span>
               </a>
               <div class="dropdown-content">
                 <a href="difference.html">What Makes Us Different</a>
               </div>
             </div>
-            <span class="course-status status-coming">Coming Soon</span>
           </div>
         </div>
         <div class="card course-card">
@@ -76,8 +73,7 @@
             <div class="status-row">
               <span class="course-status status-delayed">Delayed</span>
             </div>
-            <a class="btn secondary-btn pill-btn" href="#">
-              <span class="status-dot status-dot--muted"></span>
+            <a class="btn secondary-btn pill-btn course-btn" href="#">
               <span>Not currently available</span>
             </a>
           </div>
@@ -123,5 +119,21 @@
       <p>&copy; 2025 EJ Academy. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('.course-btn').forEach((button) => {
+      button.addEventListener('mousemove', (event) => {
+        const rect = button.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+        button.style.setProperty('--glow-x', `${x}%`);
+        button.style.setProperty('--glow-y', `${y}%`);
+      });
+
+      button.addEventListener('mouseleave', () => {
+        button.style.removeProperty('--glow-x');
+        button.style.removeProperty('--glow-y');
+      });
+    });
+  </script>
 </body>
 </html>
