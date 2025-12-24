@@ -30,13 +30,13 @@ body { font-family: 'Inter', sans-serif; background-color: #fff; color: #333; li
 .card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .course-card { display: flex; flex-direction: column; height: 100%; }
 .course-actions { margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start; }
-.status-row { display: flex; flex-direction: column; gap: 0.35rem; min-height: 3.1rem; }
-.course-activity { font-size: 0.85rem; font-weight: 600; color: #16a34a; }
+.status-row { display: flex; flex-wrap: wrap; gap: 0.5rem; min-height: 2.8rem; }
 .pill-btn { border-radius: 999px; padding: 0.7rem 1.75rem; display: inline-flex; align-items: center; gap: 0.5rem; }
-.status-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; display: inline-block; }
-.status-dot--info { background: #93c5fd; }
-.status-dot--muted { background: #cbd5f5; }
-.status-dot--active { background: #22c55e; }
+.course-btn { position: relative; overflow: hidden; isolation: isolate; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.course-btn::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at var(--glow-x, 50%) var(--glow-y, 50%), rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 60%); opacity: 0; transition: opacity 0.2s ease; }
+.course-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2); }
+.course-btn:hover::before { opacity: 1; }
+.course-btn span { position: relative; z-index: 1; }
 .course-status { display: inline-flex; align-items: center; border-radius: 999px; padding: 0.35rem 0.95rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.01em; }
 .status-coming { background: #ffedd5; color: #f97316; }
 .status-delayed { background: #fee2e2; color: #ef4444; }
